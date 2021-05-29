@@ -1,6 +1,8 @@
 ## Project Introduction
 
-Simple sales manager Dashboard for small clothing business.
+Simple sales managing dashboard for small clothing business writted in Java (Spring Boot).
+
+I created this project back when I was in college and total forgot about it. It's just today when I was cleaning up junks my personal laptop that I noticed all the past projects that I did back then. Nostalgia hit hard... Good times! haha.
 
 ## Tech Stacks
 
