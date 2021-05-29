@@ -1,0 +1,217 @@
+/*
+* Global CSS
+*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body{
+  font-family: 'Noto Sans TC', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 14px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.84);
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.btn-chromeless{
+  border-width: 0;
+  background: transparent;
+  font-size: inherit;
+  padding: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.alert {
+	margin-top: 15px;
+}
+.bg-success{
+	background-color:#5cb85c !important;
+	color:#fff !important;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.table {
+    background-color: #fff;
+}
+
+/*
+* Chart
+*/
+.a-chart{
+	background: #FFF;margin:15px 0;padding:15px;border-radius:8px
+}
+.a-chart h3{
+	font-weight: 300;
+	margin: 0;
+	font-size: 18px;
+	color: #666;
+}
+
+/*
+* TODO
+*/
+#todo{
+	max-width: 800px;
+    background: #FFF;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.6);
+	padding: 15px;
+}
+
+#todo #sortable>li{
+	border-radius: 6px;
+}
+
+#todo h3{
+    font-size: 20px;
+    margin: 15px;
+}
+
+#todo hr{
+	margin: 20px 15px;
+}
+.sub-todo > li{
+	background: #FFF;
+	padding: 8px;
+    border: 1.5px solid #eeee;
+    border-radius: 6px;
+    margin: 15px;
+}
+
+.sub-todo .inputGroup input {
+    width: 25px;
+    height: 25px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.sub-todo .inputGroup {
+    background-color: #fff;
+    display: block;
+    position: relative;
+}
+
+.sub-todo .inputGroup label {
+    padding: 5px 20px;
+    padding-left: 36px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #3C454C;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+}
+
+.sub-todo .inputGroup label:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '';
+    background-color: #5562eb;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    z-index: -1;
+}
+
+.sub-todo .inputGroup label:after {
+    width: 25px;
+    height: 25px;
+    content: '';
+    border: 2px solid #D1D7DC;
+    background-color: #fff;
+    background-image: url('/public/images/tick.png');
+    background-repeat: no-repeat;
+    background-position: 3px 5px;
+    background-size: 15px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.sub-todo .inputGroup input:checked ~ label:after {
+    background-color: #54E0C7;
+    border-color: #54E0C7;
+}
+
+/**
+ * Pagination CSS
+**/
+.pagination>li>a, .pagination>li>span {
+    border: none; 
+}
+
+.pagination > li > a {
+    background: transparent !important;
+    border-radius: 50%;
+    color: #000 !important;
+    margin: 2px;
+}
+
+.pagination > li > a:hover{
+	background: #fafafa !important;
+}
+
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+    background-color: transparent;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #5cb85c !important;
+    border-color: #5cb85c;
+    color:#fff !important;
+    -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2);
+	box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2)
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    border-radius: 50%;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {    
+	border-radius: 50%;
+}
